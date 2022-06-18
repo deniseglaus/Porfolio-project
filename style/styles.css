@@ -48,6 +48,22 @@ p {
   padding: 80px 30px;
 }
 
+.about-section h1 {
+  font-size: 64px;
+  line-height: 65px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--body-font);
+}
+
+.about-section {
+  padding: 100px 20px;
+}
+.about-section-content {
+  margin: 30px;
+}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -62,5 +78,9 @@ p {
   }
   .hero {
     padding: 50px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
 }
