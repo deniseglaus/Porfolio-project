@@ -37,7 +37,7 @@ p {
 .hero {
   background-color: var(--secondary-background-color);
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 .hero h2 {
   font-family: "Poppins", sans-serif;
@@ -64,7 +64,7 @@ p {
 }
 
 .container-section {
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 .container-content {
   margin: 30px;
@@ -139,7 +139,7 @@ footer .social-links a:hover {
     text-align: center;
   }
   h1 {
-    font-size: 45px;
+    font-size: 25px;
     line-height: 1.5;
   }
   h2 {
