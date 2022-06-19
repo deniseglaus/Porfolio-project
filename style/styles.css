@@ -1,6 +1,9 @@
 :root {
   --primary-background-color: rgb(219, 245, 245);
   --secondary-background-color: rgb(187, 231, 230);
+  --heading-color: rgb(97, 97, 97);
+  --body-color: black;
+  --tertiary-color: rgb(126, 64, 64);
   --heading-font: "Playfair Display", serif;
   --body-font: "Poppins", sans-serif;
 }
@@ -11,11 +14,11 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,h4 {
   font-family: var(--heading-font);
 }
 h1 {
-  color: rgb(97, 97, 97);
+  color: var(--heading-color);
   font-weight: bold;
   font-size: 96px;
 }
@@ -23,8 +26,11 @@ h1 {
 h2 {
   font-size: 64px;
 }
+h4{
+  font: size 48px;
+}
 p {
-  color: black;
+  color: var(--body-color);
   font-size: 16px;
   line-height: 30px;
 }
@@ -90,13 +96,42 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: var(--body-color);
   transition: all 100ms ease-in-out;
 }
 nav li.active a,
 nav a:hover {
-  color: rgb(126, 64, 64);
+  color: var(--tertiary-color);
 }
+footer {
+  margin: 50px 0;
+}
+footer .contact-box{
+background-color: var(--secondary-background-color);
+padding: 30px 120px;
+border-radius: 10px;
+}
+footer .contact-box p{
+  margin:0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--body-color);
+  font-size: 24px;
+  text-align: center;
+}
+footer .email-link:hover {
+  color: var(--tertiary-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--body-color);
+  padding: 10px;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: var(--tertiary-color);
 
 @media (max-width: 900px) {
   .project-description {
@@ -109,6 +144,9 @@ nav a:hover {
   }
   h2 {
     font-size: 30px;
+  }
+  h4{
+    font-size: 20px;
   }
   .hero {
     padding: 50px;
